@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>TicTacX</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="loader">
+
+  <h1 class="loader-logo">
+    TicTacX
+  </h1>
+
+  <p class="loader-text">
+    Initializing...
+  </p>
+
+  <div class="loader-bar">
+
+    <div class="loader-progress">
+
+    </div>
+
+  </div>
+
+</div>
+
+    <div class="cursor-glow"></div>
+    
+
+  <div id="particles-js"></div>
+  <!-- Background Glow -->
+  <div class="bg-glow glow1"></div>
+  <div class="bg-glow glow2"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1 class="logo">TicTacX</h1>
+
+      <div class="nav-icons">
+     <button class="music-toggle">
+        🎵
+     </button>
+       <button class="theme-toggle">
+        🌙
+     </button>
+      </div>
+    </nav>
+
+<div class="player-inputs">
+
+  <input
+    type="text"
+    placeholder="Player X Name"
+    class="player-x-input"
+  >
+
+  <input
+    type="text"
+    placeholder="Player O Name"
+    class="player-o-input"
+  >
+
+</div>
+
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+        <div class="turn-indicator">
+              Player X's Turn
+        </div>
+
+      <div class="score-card">
+        <h2>Player X</h2>
+        <span id="x-score">0</span>
+      </div>
+
+      <div class="score-card">
+        <h2>Draw</h2>
+        <span id="draw-score">0</span>
+      </div>
+
+      <div class="score-card">
+        <h2>Player O</h2>
+        <span id="o-score">0</span>
+      </div>
+
+    </div>
+
+    <!-- Game Board -->
+    <div class="game-board">
+
+         <div class="win-line"></div>
+
+
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+
+    </div>
+
+    <!-- Buttons -->
+    <div class="controls">
+
+      <button class="btn restart">
+        Restart Game
+      </button>
+
+      <button class="btn ai">
+        AI Mode
+      </button>
+       <select class="difficulty-select">
+
+  <option value="easy">
+    🟢 Easy
+  </option>
+
+  <option value="medium">
+    🟡 Medium
+  </option>
+
+  <option value="hard">
+  🔴 Hard
+</option>
+
+</select>
+<button class="btn reset-scores">
+  Reset Scores
+</button>
+      
+ <div class="audio-controls">
+
+        
+
+  <button class="mute-btn">
+    🔊
+  </button>
+
+  <input
+    type="range"
+    min="0"
+    max="1"
+    step="0.1"
+    value="0.4"
+    class="volume-slider"
+  >
+
+  
+
+</div>
+
+  
+
+  
+
+    </div>
+
+  </div>
+
+  <!-- Winner Modal -->
+<div class="winner-modal hidden">
+
+  <div class="winner-card">
+
+    <h2 id="winner-text">
+      Player X Wins!
+    </h2>
+
+    <button class="play-again">
+      Play Again
+    </button>
+
+  </div>
+
+</div>
+
+<div class="achievement hidden">
+
+  <h3>
+    🏆 Achievement Unlocked!
+  </h3>
+
+  <p class="achievement-text">
+    First Victory
+  </p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
