@@ -1,0 +1,82 @@
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+  body{
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:15px 0;
+  }
+
+  .container{
+    width:95%;
+    min-height:auto;
+    padding:18px;
+  }
+
+  .logo{
+    font-size:1.5rem;
+  }
+
+  .player-inputs{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .player-inputs input{
+    width:100%;
+  }
+
+  .game-board{
+    gap:10px;
+      width:100%;
+    max-width:320px;
+    margin:20px auto;
+  }
+
+  .cell{
+    font-size:2.5rem;
+  }
+
+  .controls{
+    gap:10px;
+  }
+
+  .btn{
+    width:100%;
+    height:48px;
+    font-size:0.9rem;
+  }
+
+  .difficulty-select{
+    width:100%;
+    height:48px;
+    font-size:0.9rem;
+  }
+
+  .audio-controls{
+    width:100%;
+  }
+
+  .winner-card{
+    width:90%;
+    max-width:320px;
+  }
+
+  .achievement{
+    width:90%;
+    left:5%;
+    right:5%;
+  }
+
+
+  .score-card h2{
+    font-size:0.8rem;
+  }
+
+ .score-card span{
+    font-size:1.5rem;
+ }
+}
