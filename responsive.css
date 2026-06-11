@@ -1,82 +1,157 @@
-/* ==========================
-   MOBILE
-========================== */
-
 @media (max-width:768px){
 
   body{
-    overflow-y:auto;
+    padding:15px;
     overflow-x:hidden;
-    padding:15px 0;
   }
 
   .container{
-    width:95%;
+    width:100%;
+    max-width:100%;
     min-height:auto;
-    padding:18px;
+
+    padding:20px;
+
+    border-radius:25px;
+  }
+
+  /* NAVBAR */
+
+  .navbar{
+    margin-bottom:20px;
   }
 
   .logo{
-    font-size:1.5rem;
+    font-size:2rem;
   }
 
+  /* PLAYER INPUTS */
+
   .player-inputs{
+    display:flex;
     flex-direction:column;
+
     gap:12px;
+
+    margin-bottom:20px;
   }
 
   .player-inputs input{
     width:100%;
   }
 
+  /* TURN INDICATOR */
+
+  .turn-indicator{
+    width:100%;
+
+    margin-bottom:12px;
+  }
+
+  /* SCOREBOARD */
+
+  .scoreboard{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    margin-bottom:25px;
+  }
+
+  .score-card{
+    width:100%;
+  }
+
+  .score-card h2{
+    font-size:0.9rem;
+  }
+
+  .score-card span{
+    font-size:1.8rem;
+  }
+
+  /* GAME BOARD */
+
   .game-board{
+
+    width:min(92vw,340px);
+
+    margin:0 auto 25px;
+
     gap:10px;
-      width:100%;
-    max-width:320px;
-    margin:20px auto;
   }
 
   .cell{
-    font-size:2.5rem;
+    font-size:clamp(2rem,10vw,4rem);
   }
+
+  /* CONTROLS */
 
   .controls{
-    gap:10px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    margin-top:20px;
   }
 
-  .btn{
-    width:100%;
-    height:48px;
-    font-size:0.9rem;
-  }
-
+  .btn,
   .difficulty-select{
+
     width:100%;
-    height:48px;
+
+    height:50px;
+
     font-size:0.9rem;
   }
+
+  /* AUDIO */
 
   .audio-controls{
+
+    grid-column:1 / -1;
+
     width:100%;
+
+    justify-content:center;
   }
 
+  .volume-slider{
+    flex:1;
+  }
+
+  /* MODAL */
+
   .winner-card{
+
     width:90%;
+
     max-width:320px;
   }
 
+  .winner-card h2{
+    font-size:1.6rem;
+  }
+
+  /* ACHIEVEMENT */
+
   .achievement{
+
     width:90%;
+
     left:5%;
+
     right:5%;
   }
 
+  /* PARTICLES */
 
-  .score-card h2{
-    font-size:0.8rem;
+  #particles-js{
+    opacity:0.25;
   }
-
- .score-card span{
-    font-size:1.5rem;
- }
 }
