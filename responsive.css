@@ -155,3 +155,19 @@
     opacity:0.25;
   }
 }
+
+@media (max-width:360px){
+
+  .logo{
+    font-size:1.6rem;
+  }
+
+  .scoreboard{
+    grid-template-columns:1fr;
+  }
+
+  .controls{
+    grid-template-columns:1fr;
+  }
+
+}
